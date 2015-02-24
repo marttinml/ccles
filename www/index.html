@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" ng-app="loginApp">
 <head>
 	<meta charset="UTF-8">
 	<title>ccles</title>
-	<link rel="stylesheet" href="/css/ccles-1.0.css">
+	<link rel="stylesheet" href="./assets/css/login.css">
+
+	<script src="./assets/js/angular.min.js"></script>
+
+	<script src="./app/login.modules.js"></script>
+	<script src="./app/login.services.js"></script>
+	<script src="./app/login.controllers.js"></script>
 </head>
 <body>
-	<h1>Welcome to ccles</h1>
-	<label for="number">Numero celular</label>
-	<input type="text" id="number">
 
-	<label for="name">Nombre</label>
-	<input type="text" id="name">
+	<section ng-controller="LoginController" class="out-circle">
+		<div class="main-circle">
+			<input type="text" ng-model="data.user" placeholder="{{ph.number}}">
+			<input type="password" ng-model="data.pass" placeholder="{{ph.password}}">
+			<button id="register" ng-mouseup="send()" >Log In</button>
+		</div>
+	</section>
+	<section class="min-circle">Sign Up</section>
 
-	<button id="register">Registrar</button>
-<script src="./js/jquery-2.1.1.min.js"></script>
-<script src="./js/ccles-1.0.js"></script>
+<script src="./assets/js/jquery-2.1.1.min.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,74 @@
+html, body, ul, ol {
+  margin: 0;
+  padding: 0; }
+
+button, input {
+  border: 0;
+  outline: 0;
+  font-size: 14px; }
+
+input {
+  color: #969696; }
+
+button {
+  cursor: pointer; }
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+  font-size: 14px; }
+
+section.out-circle {
+  border: 2px solid #4f8e3a;
+  border-radius: 175px;
+  height: 350px;
+  width: 350px;
+  margin: 20% auto auto auto; }
+  section.out-circle div.main-circle {
+    background-color: #4f8e3a;
+    border-radius: 150px;
+    color: white;
+    height: 225px;
+    width: 300px;
+    margin: 25px auto auto auto;
+    padding-top: 75px; }
+    section.out-circle div.main-circle input {
+      height: 40px;
+      width: 180px;
+      margin: 1px 50px 0 50px;
+      border-radius: 5px;
+      padding-left: 20px;
+      font-size: 28px; }
+    section.out-circle div.main-circle input:focus {
+      transition: 0.2s;
+      background-color: rgba(255, 255, 255, 0.5); }
+    section.out-circle div.main-circle input::-webkit-input-placeholder {
+      color: gainsboro; }
+    section.out-circle div.main-circle input:first-of-type {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; }
+    section.out-circle div.main-circle input:last-of-type {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+    section.out-circle div.main-circle button {
+      height: 40px;
+      width: 200px;
+      margin: 10px 50px 0 50px;
+      border-radius: 5px;
+      background-color: #4f8e3a;
+      border: 1px solid white;
+      color: white; }
+    section.out-circle div.main-circle button:hover {
+      background-color: #3b7a26; }
+
+section.min-circle {
+  width: 150px;
+  height: 150px;
+  background-color: #4f8e3a;
+  border-radius: 75px;
+  margin: 10% 30% auto auto;
+  text-align: center;
+  line-height: 8.5;
+  color: white;
+  cursor: pointer;
+  font-size: 18px; }

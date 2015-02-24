@@ -1,0 +1,102 @@
+$green-color:		rgb(79,142,58);
+$greenlight-color:	rgba(59,122,38,.5);
+$greendark-color:	rgb(59,122,38);
+$whitetrans-color:	rgba(255,255,255,.5);
+$white-color:		rgb(255,255,255);
+$gray-color:		rgb(150,150,150);
+$graylight-color:	rgb(220,220,220);
+
+
+html,
+body,
+ul,
+ol{
+  margin:  0;
+  padding: 0;
+}
+button,input{
+	border:0;
+	outline: 0;
+	font-size: 14px;
+}
+input{
+	color: $gray-color;
+}
+button{
+	cursor: pointer;
+}
+
+body{
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+  font-size: 14px;
+}
+
+section.out-circle{
+	border:2px solid $green-color;
+		border-radius: 175px;
+		height: 350px;
+		width: 350px;
+		margin: 20% auto auto auto;
+
+
+	div.main-circle{
+		background-color: $green-color;
+		border-radius: 150px;
+		color: $white-color;
+		height: 225px;
+		width: 300px;
+		margin: 25px auto auto auto;
+		padding-top: 75px;
+		
+
+		input{
+			height: 40px;
+			width: 180px;
+			margin: 1px 50px 0 50px;
+			border-radius: 5px;
+			padding-left: 20px;
+			font-size: 28px;
+		}
+		input:focus{
+			transition:.2s;
+			background-color: $whitetrans-color;
+		}
+		input::-webkit-input-placeholder {color: $graylight-color;}
+
+		input:first-of-type{
+			border-bottom-left-radius:0;
+			border-bottom-right-radius:0;
+
+		}
+		input:last-of-type{
+			border-top-left-radius:0;
+			border-top-right-radius:0;
+		}
+		button{
+			height: 40px;
+			width: 200px;
+			margin: 10px 50px 0 50px;
+			border-radius: 5px;
+			background-color: $green-color;
+			border:1px solid $white-color;
+			color: $white-color;
+		}
+		
+		button:hover{
+			background-color: $greendark-color;
+		}
+	}
+}
+
+section.min-circle{
+	width: 150px;
+	height: 150px;
+	background-color: $green-color;
+	border-radius: 75px;
+	margin: 10% 30% auto auto;
+	text-align: center;line-height: 8.5;
+	color: $white-color;
+	cursor: pointer;
+	font-size: 18px;
+}
